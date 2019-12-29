@@ -76,8 +76,8 @@ double PID::TotalError() {
 ## The Effects of the PID Coefficients
 Each of these Coefficients is critical to make a versatile controller.  
 `Kp` is a proportional factor to the cross track error. The higher the number, the faster the oscillation and the overshooting becomes larger.  
-`Kd` is a proportional factor to the differnce between the previous CTE and the current one. It important to prevent overshooting. The higher the number, the slower it is to converge though it converges more smoothly. Too low of a number will not prevent overshooting anymore.  
-`Ki` is a proportional factor to the sum of all CTEs until that point. This will help correct any syetematic bias. 
+`Kd` is a proportional factor to the differnce between the previous CTE and the current one. It is important to prevent overshooting. The higher the number, the slower it is to converge though it converges more smoothly. Too low of a number will not prevent overshooting anymore.  
+`Ki` is a proportional factor to the sum of all CTEs until that point. This will help correct any systematic bias. 
 
 They all work as expected and have been chosen after some manual trial and error and tuning
 
